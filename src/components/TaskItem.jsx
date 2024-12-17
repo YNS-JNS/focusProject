@@ -22,7 +22,7 @@ const TaskItem = ({ task, toggleComplete, removeTask, editTask }) => {
     if (!task) return null;
 
     return (
-        <div className='flex items-center my-3 gap-2'>
+        <div className='flex items-center my-3 gap-2 mx-2'>
             {
                 isEditMode ?
                     // Edit mode

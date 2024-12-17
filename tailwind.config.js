@@ -1,3 +1,5 @@
+// const plugin = require('tailwind-scrollbar');
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -10,5 +12,10 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [ 
+    // require('tailwind-scrollbar') 
+  ],
+  variants: {
+    // scrollbar: ['rounded'],
+  }
 }

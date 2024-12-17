@@ -5,10 +5,18 @@ import FormTask from './FormTask'
 const Todo = () => {
 
     const [tasks, setTasks] = useState([
-        { id: 1, title: 'Go To Gym 🦾', isCompleted: false },
-        { id: 2, title: 'Cooking a healthy dinner 🥗🧃', isCompleted: true },
-        { id: 3, title: 'Do Homework 🧠📖', isCompleted: false },
+        { id: 1, title: 'Read a new book 📚', isCompleted: false },
+        { id: 2, title: 'Morning meditation 🧘‍♂️', isCompleted: true },
+        { id: 3, title: 'Complete React project 🚀', isCompleted: false },
+        { id: 4, title: 'Plan weekend trip 🏕️', isCompleted: true },
+        { id: 5, title: 'Call family 👨‍👩‍👧‍👦', isCompleted: false },
+        { id: 6, title: 'Learn a new recipe 🍳', isCompleted: true },
+        { id: 7, title: 'Workout session 💪', isCompleted: false },
+        { id: 8, title: 'Fix the bike 🚲', isCompleted: false },
+        { id: 9, title: 'Clean up the workspace 🧹', isCompleted: true },
+        { id: 10, title: 'Organize photo albums 📸', isCompleted: false },
     ]);
+
 
 
     const handleAddTask = (newTaskTitle) => {
@@ -39,10 +47,11 @@ const Todo = () => {
         }))
     }
 
-    console.log('Task object: ', tasks);
-
     return (
-        <section className="bg-slate-50 w-[28rem] min-h-[29rem] rounded-lg px-6 py-6 shadow-lg shadow-gray-300">
+        <section
+            className="bg-slate-50 mt-10 w-[28rem] min-h-[550px] rounded-lg px-6 py-6 shadow-lg shadow-gray-300"
+            // className="bg-slate-50 mt-20 w-[28rem] h-[30rem] rounded-lg px-6 py-6 shadow-lg shadow-gray-300 overflow-y-hidden"
+        >
             {/* Title & Inputs */}
             <h1 className="text-slate-950 font-bold text-3xl text-center mb-4">F⚡st Tracker</h1>
             <FormTask handleAddTask={handleAddTask} />

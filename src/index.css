@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* _______________________________________________________________________ */
+/* --- Masquer uniquement la barre de défilement avec CSS personnalisé ---*/
+
+/* .no-scrollbar::-webkit-scrollbar{ */
+    /* Chrome, Safari, Opera */
+    /* display: none;  */
+/* } */
+
+/* ------------------------------------------  */
+/* .no-scrollbar {
+    /* IE and Edge */
+    /* -ms-overflow-style: none;  */
+    /* Firefox */
+    /* scrollbar-width: none; 
+  /* } */
+
+    /* OR  */
+
+/* .no-scrollbar{ */
+    /* Firefox */
+    /* scrollbar-width: none;  */
+    /* Internet Explorer 10+ */
+    /* -ms-overflow-style: none; */
+    /* To hide scrollbar */  
+    /* overflow-y: scroll;  */
+    /* Set the height to 100% of the viewport */
+    /* height: 100vh;  */
+/* } */
+/* ------------------------------------------  */
+
+/* _______________________________________________________________________ */
+/* --- Add a custom style to Scrollbar with custom CSS ---*/
+
+/* Style global pour la scrollbar */
+::-webkit-scrollbar {
+    /* Largeur de la scrollbar */
+    width: 8px; 
+    /* Hauteur pour scrollbar horizontale */
+    height: 8px; 
+  }
+  
+  /* Couleur de fond de la scrollbar */
+  ::-webkit-scrollbar-track {
+    /* Couleur de la piste */
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  /* Couleur et style de la poignée (thumb) */
+  ::-webkit-scrollbar-thumb {
+    /* Couleur de la poignée */
+    background: #888; 
+    background: #b6afeb; 
+    border-radius: 10px;
+  }
+  
+  /* Effet au survol de la poignée */
+  ::-webkit-scrollbar-thumb:hover {
+    /* Couleur plus foncée au survol */
+    background: #555; 
+  }
+/* _______________________________________________________________________ */
+  

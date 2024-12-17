@@ -2,7 +2,7 @@ import Todo from "./components/Todo";
 
 function App() {
   return (
-    <div className="bg-gray-900 h-screen w-screen flex justify-center items-center">
+    <div className="bg-stone-900 h-screen w-screen flex justify-center items-start">
       <Todo />
     </div>
   );

@@ -61,7 +61,7 @@ Ce projet est maintenant prêt pour être déployé sur GitHub ou toute autre pl
 - Example of a running Todo App with all CRUD functionalities.  
 - Exemple d'application Todo avec toutes les fonctionnalités CRUD.  
 
-![Screenshot](./screenshot.png) *(Add your screenshot here | Ajoutez votre capture d'écran ici)*  
+![Screenshot](https://github.com/YNS-JNS/todo-app/blob/a643c7dd69e93667de15f166ae0b73e26c23ea6c/src/screens/screen1.png)
 
 ---
 

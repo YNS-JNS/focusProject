@@ -11,7 +11,7 @@ const TaskList = ({ tasks, toggleComplete, removeTask, editTask }) => {
 
     >
       {
-        tasks ? (tasks.map(task => (
+        tasks.length > 0 ? (tasks.map(task => (
           <TaskItem key={task.id} task={task} toggleComplete={toggleComplete} removeTask={removeTask} editTask={editTask} />
         ))) : (
           <h3 className='text-center text-gray-600'>No tasks available.</h3>

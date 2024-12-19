@@ -1,8 +1,15 @@
 import React, { useState } from 'react'
 import TaskList from './TaskList'
 import FormTask from './FormTask'
+import useFetch from '../hooks/useFetch';
 
 const Todo = () => {
+
+    const { data, error, isLoading } = useFetch("https://fakestoreapi.com/products/1");
+
+    console.log("Inside Todo: isLoading", isLoading);
+    console.log("Inside Todo: Data: ", data);
+    console.log("Inside Todo: Error: ", error);
 
     const [tasks, setTasks] = useState([
         { id: 1, title: 'Read a new book 📚', isCompleted: false },
@@ -12,9 +19,6 @@ const Todo = () => {
         { id: 5, title: 'Call family 👨‍👩‍👧‍👦', isCompleted: false },
         { id: 6, title: 'Learn a new recipe 🍳', isCompleted: true },
         { id: 7, title: 'Workout session 💪', isCompleted: false },
-        { id: 8, title: 'Fix the bike 🚲', isCompleted: false },
-        { id: 9, title: 'Clean up the workspace 🧹', isCompleted: true },
-        { id: 10, title: 'Organize photo albums 📸', isCompleted: false },
     ]);
 
 
@@ -50,7 +54,7 @@ const Todo = () => {
     return (
         <section
             className="bg-slate-50 mt-10 w-[28rem] min-h-[550px] rounded-lg px-6 py-6 shadow-lg shadow-gray-300"
-            // className="bg-slate-50 mt-20 w-[28rem] h-[30rem] rounded-lg px-6 py-6 shadow-lg shadow-gray-300 overflow-y-hidden"
+        // className="bg-slate-50 mt-20 w-[28rem] h-[30rem] rounded-lg px-6 py-6 shadow-lg shadow-gray-300 overflow-y-hidden"
         >
             {/* Title & Inputs */}
             <h1 className="text-slate-950 font-bold text-3xl text-center mb-4">F⚡st Tracker</h1>
